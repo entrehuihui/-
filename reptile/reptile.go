@@ -112,7 +112,6 @@ func GetUrlDate(url string) ([]byte, error) {
 		return nil, err
 	}
 	defer resq.Body.Close()
-
 	body, err := ioutil.ReadAll(resq.Body)
 	if err != nil {
 		fmt.Println("ReadAll err:", err)
